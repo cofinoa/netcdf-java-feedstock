@@ -9,9 +9,9 @@ Package license: BSD-3-Clause
 
 Summary: The Unidata netcdf-java library. The toolsUI.jar contains everything to run the ToolsUI application directly from it.
 
-Development: https://github.com/unidata/netcdf-java
+Development: https://github.com/Unidata/thredds
 
-Documentation: https://docs.unidata.ucar.edu/netcdf-java/current/userguide/index.html
+Documentation: https://docs.unidata.ucar.edu/netcdf-java/4.6/userguide/index.html
 
 Current build status
 ====================
