@@ -50,12 +50,12 @@ chmod +x ${PREFIX}/bin/ncj-gribcdmindex
 
 cat <<EOF >${PREFIX}/bin/ncj-featurescan
 #!/usr/bin/env bash
-java -Xms512m -Xmx4g \$JAVA_OPTS -cp $PREFIX/lib/java/toolsUI.jar ucar.nc2.ft2.scan.FeatureScan "\$@"
+java -Xms512m -Xmx4g \$JAVA_OPTS -cp $PREFIX/lib/java/toolsUI.jar ucar.nc2.ft.scan.FeatureScan "\$@"
 EOF
 chmod +x ${PREFIX}/bin/ncj-featurescan
 
-cat <<EOF >${PREFIX}/bin/ncj-catalogcrawler
-#!/usr/bin/env bash
-java -Xms512m -Xmx4g \$JAVA_OPTS -cp $PREFIX/lib/java/toolsUI.jar thredds.client.catalog.tools.CatalogCrawler "\$@"
-EOF
-chmod +x ${PREFIX}/bin/ncj-catalogcrawler
+#cat <<EOF >${PREFIX}/bin/ncj-catalogcrawler
+##!/usr/bin/env bash
+#java -Xms512m -Xmx4g \$JAVA_OPTS -cp $PREFIX/lib/java/toolsUI.jar thredds.client.catalog.tools.CatalogCrawler "\$@"
+#EOF
+#chmod +x ${PREFIX}/bin/ncj-catalogcrawler
