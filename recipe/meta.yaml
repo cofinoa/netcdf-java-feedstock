@@ -10,7 +10,7 @@ source:
   sha256: 7f18897bd10413b19f23aa5dd7f7b8cd4e9a9ccdd3bce840af78023d0a56aa8b
 
 build:
-  number: 0
+  number: 1
   noarch: generic
 
 requirements:
@@ -19,16 +19,16 @@ requirements:
 
 test:
   commands:
-    - test -f $PREFIX/bin/ncj-toolsui            # [unix]
-    - if exist %SCRIPT%\ncj-toolsui.bat exit 1   # [win]
-    - ncj-ncdump
-    - ncj-nccopy
-    - ncj-nccompare
-    - ncj-bufrspliter
-    - ncj-cfpointwriter
-    - ncj-gribcdmindex
-    - ncj-featurescan
-#    - ncj-catalogcrawler
+    - test -f $PREFIX/bin/ncj4-toolsui            # [unix]
+    - if exist %SCRIPT%\ncj4-toolsui.bat exit 1   # [win]
+    - ncj4-ncdump
+    - ncj4-nccopy
+    - ncj4-nccompare
+    - ncj4-bufrspliter
+    - ncj4-cfpointwriter
+    - ncj4-gribcdmindex
+    - ncj4-featurescan
+#    - ncj4-catalogcrawler
 
 about:
   home: https://www.unidata.ucar.edu/software/netcdf-java/
