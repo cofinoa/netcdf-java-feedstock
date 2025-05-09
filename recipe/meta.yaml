@@ -1,5 +1,5 @@
 {% set name = "netcdf-java" %}
-{% set version = "5.7.0" %}
+{% set version = "5.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://downloads.unidata.ucar.edu/{{ name }}/{{ version }}/toolsUI-{{ version }}.jar
-  sha256: 003abb36e3f2f9592a80fd8f1f31a91019c7f0519539b4120a651d2f4def63be
+  sha256: 5dec5a1f88ddd3e88718f88cdc735d34d526188ed3a974a666f98233df39b2bb
 
 build:
   number: 0
