@@ -7,6 +7,7 @@ package:
 
 source:
   url: https://downloads.unidata.ucar.edu/{{ name }}/{{ version }}/toolsUI-{{ version }}.jar
+  url: https://github.com/Unidata/netcdf-java/releases/download/v{{ version }}/toolsUI-{{ version }}.jar
   sha256: 3ba80b2b2125028ebcb4d98034b165dfca5a5dddaeaad5fa41ab211aa378fc72
 
 build:
@@ -14,6 +15,8 @@ build:
   noarch: generic
 
 requirements:
+  build:
+    - unix2dos
   run:
     - openjdk >=8
 
@@ -24,7 +27,7 @@ test:
     - ncj-ncdump
     - ncj-nccopy
     - ncj-nccompare
-    - ncj-bufrspliter
+    - ncj-bufrsplitter
     - ncj-cfpointwriter
     - ncj-gribcdmindex
     - ncj-featurescan
