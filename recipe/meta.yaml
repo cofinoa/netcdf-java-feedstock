@@ -23,8 +23,9 @@ requirements:
 
 test:
   commands:
-    - test -f $PREFIX/bin/ncj-toolsui            # [unix]
-    - if exist %SCRIPT%\ncj-toolsui.bat exit 1   # [win]
+    - test -f $PREFIX/bin/ncj-toolsui                   # [unix]
+    - test -f $PREFIX/bin/ncj-toolsui.bat               # [unix]
+    - if not exist %PREFIX%\bin\ncj-toolsui.bat exit 1  # [win]
     - ncj-ncdump
     - ncj-nccopy
     - ncj-nccompare
